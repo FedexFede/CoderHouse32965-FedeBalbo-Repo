@@ -161,8 +161,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cea3ae1256eb9c0488d68f8bc674596e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetoAInstanciar: {fileID: 0}
+  objetoAInstanciar: {fileID: 1755220838215007769, guid: 264e075858c184f419074042a5d071a6, type: 3}
   lugar: {fileID: 0}
+  loadTime: 0
 --- !u!1 &5240929966428445785
 GameObject:
   m_ObjectHideFlags: 0
