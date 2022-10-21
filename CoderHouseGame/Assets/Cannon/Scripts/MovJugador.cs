@@ -8,6 +8,10 @@ public class MovJugador : MonoBehaviour
     public GameObject cam1;
     public GameObject cam2;
 
+    public float xRotation = 90.0f;
+    public float xRotation1 = 0.0f;
+    public float RotationSpeed = 8.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,10 +28,8 @@ public class MovJugador : MonoBehaviour
         {
             ToggleCam();
         }
-        // Start is called before the first frame update
-        void Start()
-        {
-        }
+
+
     }
     void Movement()
     {
@@ -37,6 +39,15 @@ public class MovJugador : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
 
         transform.position += (move * speed * Time.deltaTime);
+
+        if (Input.GetKey(KeyCode.Q))
+        {
+            transform.Rotate(Vector3.up * (RotationSpeed * Time.deltaTime));
+        }
+        if (Input.GetKey(KeyCode.E))
+        {
+            transform.Rotate(Vector3.down * (RotationSpeed * Time.deltaTime));
+        }
     }
 
     void ToggleCam()
