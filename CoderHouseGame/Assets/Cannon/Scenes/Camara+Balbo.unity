@@ -738,8 +738,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  cam1: {fileID: 0}
-  cam2: {fileID: 0}
+  cam1: {fileID: 1709073275}
+  cam2: {fileID: 313431870}
   xRotation: 90
   xRotation1: 0
   RotationSpeed: 8
